@@ -1,0 +1,86 @@
+/* src/pages/HomePage.scss */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+$goldenHoney: #FFB300; // A nice honey color!
+$AmberSyrup: #D9822B; // A darker honey color!
+$CreamWax: #FFF8E1; // a cream colour for text
+$CharcoalBee: #3B3B3B; // A dark color for text
+$Pollen: #F4E285; // A light yellow color for background
+$BeachWood: #A66F2B; // A light brown color for background
+$CloverLeaf: #A4C956; // I probably wont use this one, but its there
+$Digifont: 'Inconsolata', monospace;
+
+// background for the entire site 
+
+.beeB{
+    height: 100px;
+    width:auto;
+    align-self: center;
+    margin: 0 auto;
+    display: block;
+    padding: 0px 0px 0px 0px;
+}
+
+.about {
+    background-color: $Pollen;
+    color: $CharcoalBee;
+    font-family: $Digifont;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(50%);
+}
+.faqHead{
+    font-size: 1rem;
+    font-family: $Digifont;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    position: relative;
+    transform: translateY(900%);
+}
+
+.about h1 {
+    font-size: 1.3rem;
+    color: $CharcoalBee;
+}
+.about p {
+    font-size: 0.9rem;
+    color: $BeachWood;    
+}
+
+.about h4{
+    background-color: $CloverLeaf;
+    padding: 10px;
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+
+.scroll
+{
+    height: 200px;
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE/Edge */
+}
+.scroll::-webkit-scrollbar {
+    display: none;              /* Chrome, Safari, Opera */
+  }
+
+.titleAbout{
+    font-size: 2rem;
+    font-family: $Digifont;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    color: $CharcoalBee;
+    position: relative;
+    transform: translateY(300%);
+}

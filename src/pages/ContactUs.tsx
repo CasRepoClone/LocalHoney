@@ -12,17 +12,19 @@ const ContactUs: React.FC = () => {
     <div className="contact-container">
         <img src="/assets/bee.png" alt="beeA" className="beeA"/>
         <h1> fill out the form to join our waiting list - we'll be in touch soon</h1>
-        <div className='InputContainer'>
-            <h2>Name</h2>
-            <input className='txtbox nameInput'type="text" placeholder="Enter your name" />
-        </div>
-        <div className='InputContainer'>
-            <h2>Email</h2>
-            <input className='txtbox emailInput' type="text" placeholder="Enter your email" />
-        </div>
-        <div className='SubmitButtonContainer'>
-            <button className="SubmitButton">Submit</button>
-        </div>
+        <form className="contact-form-form" action="/SpringBootEndPointHere" method="post">
+          <div className='InputContainer'>
+              <h2>Name</h2>
+              <input className='txtbox nameInput'type="text" placeholder="Enter your name" required />
+          </div>
+          <div className='InputContainer'>
+              <h2>Email</h2>
+              <input className='txtbox emailInput' type="text" placeholder="Enter your email" required autoComplete="on" />
+          </div>
+          <div className='SubmitButtonContainer'>
+              <button value="Submit" className="SubmitButton">Submit</button>
+          </div>
+        </form>
     
     </div>
     <Footer />

@@ -1,17 +1,22 @@
 import React from 'react';
 import '../styles/footer.scss'; // Import the SCSS file for styling
 import { on } from 'events';
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
 
   const onFaqClick = () => {
-    alert("Hello! This is a test alert. faq");
+    navigate('/faq');
   }
   const onAboutClick = () => {
-    alert("Hello! This is a test alert. about");
+    navigate("/about");
   }
-  const onContactClick = () => {
-    alert("Hello! This is a test alert. contact");
+  const onPrivacyClick = () => {
+    navigate('/privacypolicy'); 
+  }
+  const onHomeClick = () => {
+    navigate('/'); 
   }
   return (
     <>
@@ -26,7 +31,10 @@ const Footer: React.FC = () => {
             <h1 onClick={onAboutClick}>ABOUT</h1>
           </div>
           <div>
-            <h1 onClick={onContactClick}>Contact us</h1>
+            <h1 onClick={onHomeClick}>Home</h1>
+          </div>
+          <div>
+            <h1 onClick={onPrivacyClick}>DATA</h1>
           </div>
         </div>
       </footer>
