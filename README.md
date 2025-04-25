@@ -1,12 +1,12 @@
 
 # Welcome to my react project for my families small honey store 
 I have spent 3 hours non stop working on the majority of the code required - only a few basic pages and simple form submission backend is required 
-
+<img src="https://github.com/user-attachments/assets/761c2d8a-71ab-45ed-9c76-996840fdb6cf" width="200" height="200" />
 ## next steps 
 - Implementation of springboot backend
 - hosting on AWS
 - GDPR and legal risk assesment of data storage
-<img src="https://github.com/user-attachments/assets/761c2d8a-71ab-45ed-9c76-996840fdb6cf" width="200" height="200" />
+
 ## wireframe prototype in figma 
 <img width="789" alt="wireframe figma" src="https://github.com/user-attachments/assets/7489eb3b-903d-4e7a-8c66-d97a6ace3ef4" />
 
