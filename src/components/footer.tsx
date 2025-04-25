@@ -1,10 +1,13 @@
 import React from 'react';
+import '../styles/footer.scss'; // Import the SCSS file for styling
 
 const Footer: React.FC = () => {
   return (
+    
     <footer className="site-footer">
       <p>© {new Date().getFullYear()} Cotford Honey. All rights reserved.</p>
     </footer>
+    
   );
 };
 
