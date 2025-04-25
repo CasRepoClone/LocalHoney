@@ -11,7 +11,7 @@ I have spent 3 hours non stop working on the majority of the code required - onl
 ## Updates so far
 - Added framer for animations
 - Website configured to a single page application
-- Removed Herobrian
+- Removed Herobrine
 
 ## wireframe prototype in figma 
 <img width="789" alt="wireframe figma" src="https://github.com/user-attachments/assets/7489eb3b-903d-4e7a-8c66-d97a6ace3ef4" />
