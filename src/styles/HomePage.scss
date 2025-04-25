@@ -14,7 +14,7 @@ $Digifont: 'Inconsolata', monospace;
 // background for the entire site 
 body {
   background-color: $goldenHoney;
-  overflow: hidden; // prevents scrollbars from appearing
+  overflow-x: hidden; // only hide horizontal scroll, not vertical
 }
 
 // the main hompage container 

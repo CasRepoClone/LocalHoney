@@ -11,22 +11,31 @@ $CloverLeaf: #A4C956; // I probably wont use this one, but its there
 $Digifont: 'Inconsolata', monospace;
 
 // background for the entire site 
-body {
-    background-color: $AmberSyrup;
-    overflow: hidden; // prevents scrollbars from appearing
-    font-family: $Digifont;
-  }
-.bee{
+
+.beeA{
     height: 100px;
-    width:auto
+    width:auto;
+    align-self: center;
+    margin: 0 auto;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    
+    
 }
-.homepage-container h1{
+.contact-container h1{
     font-size: 1rem;
     color: $CreamWax;
     font-family: $Digifont;
+    
 }
-.homepage-container{
+.contact-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 .InputContainer h2{

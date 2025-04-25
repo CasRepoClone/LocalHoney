@@ -3,17 +3,17 @@ import React from 'react';
 import '../styles/HomePage.scss'; // Import the SCSS file for styling
 import Footer from '../components/footer';
 import { motion } from 'framer-motion';
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 const HomePage: React.FC = () => {
-
+  const navigate = useNavigate();
 
   // code here
 
   const onHoneyClick = () => {
-    alert("Divertiny you to the honey page");
-    // api link here
+    navigate('/contactus');
   };
 
   return (

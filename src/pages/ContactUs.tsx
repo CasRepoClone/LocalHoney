@@ -1,4 +1,3 @@
-// src/pages/HomePage.tsx
 import React from 'react';
 import '../styles/contactUs.scss'; // Import the SCSS file for styling
 import Footer from '../components/footer';
@@ -9,8 +8,9 @@ import { motion } from 'framer-motion';
 const ContactUs: React.FC = () => {
   return (
     <>
-    <div className="homepage-container">
-        <img src="/assets/bee.png" alt="bee" className="bee"/>
+
+    <div className="contact-container">
+        <img src="/assets/bee.png" alt="beeA" className="beeA"/>
         <h1> fill out the form to join our waiting list - we'll be in touch soon</h1>
         <div className='InputContainer'>
             <h2>Name</h2>
