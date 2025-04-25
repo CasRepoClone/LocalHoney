@@ -2,7 +2,6 @@
 import React from 'react';
 import '../styles/HomePage.scss'; // Import the SCSS file for styling
 import Footer from '../components/footer';
-
 const HomePage: React.FC = () => {
   return (
     <>
@@ -14,6 +13,7 @@ const HomePage: React.FC = () => {
         </div>
         <h2> test size</h2>
     </div>
+
     <Footer />
     </>
   );

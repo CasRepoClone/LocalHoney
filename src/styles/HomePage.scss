@@ -31,6 +31,7 @@ body {
 // header within the homepage container 
 .homepage-container h1 {
   font-size: 3rem;
+  text-wrap: nowrap;
   color: #1a1a1a; /* A nice honey color! */
   margin-bottom: 1rem;
 }
@@ -54,6 +55,7 @@ body {
     width: 200px;
     height: auto;
     image-rendering: pixelated;
+    filter: drop-shadow(0.08rem 0.08rem 0.04rem $CharcoalBee) brightness(1.1);
   }
 }
 
@@ -65,7 +67,9 @@ body {
 
 .honey {
   position: absolute;
-  justify-self: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 //#endregion IconStyling
 
