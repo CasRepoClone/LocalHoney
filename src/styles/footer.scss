@@ -51,3 +51,12 @@ $Digifont: 'Inconsolata', monospace;
     padding: 1cqh;
     transform: translateX(20px); // don't touch this, if it works don't fix it 
 }
+
+.stackedContainer{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+
+}

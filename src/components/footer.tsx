@@ -27,12 +27,11 @@ const Footer: React.FC = () => {
           <div>
             <h1 onClick={onFaqClick}>FAQ</h1>
           </div>
-          <div>
+          <div className="stackedContainer">
             <h1 onClick={onAboutClick}>ABOUT</h1>
+            <h1 onClick={onHomeClick}>HOME</h1>
           </div>
-          <div>
-            <h1 onClick={onHomeClick}>Home</h1>
-          </div>
+         
           <div>
             <h1 onClick={onPrivacyClick}>DATA</h1>
           </div>
