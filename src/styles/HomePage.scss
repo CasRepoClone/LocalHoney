@@ -14,6 +14,7 @@ $Digifont: 'Inconsolata', monospace;
 // background for the entire site 
 body {
   background-color: $goldenHoney;
+  overflow: hidden; // prevents scrollbars from appearing
 }
 
 // the main hompage container 
@@ -24,7 +25,7 @@ body {
   min-height: 100vh;
   text-align: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0rem;
   color: $CreamWax;
 }
 
@@ -32,15 +33,16 @@ body {
 .homepage-container h1 {
   font-size: 3rem;
   text-wrap: nowrap;
-  color: #1a1a1a; /* A nice honey color! */
-  margin-bottom: 1rem;
+  color: $CreamWax; /* A nice honey color! */
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0.08rem 0.2rem 0.04rem $CharcoalBee) brightness(1.1);
 }
 
 // h2 small text within the homepage container - still bold
 .homepage-container h2 {
   font-size: 1.2rem;
   color: #333;
-  margin-top: 1rem;
+  margin-top: -4rem;
 }
 
 //#region IconStyling
@@ -65,11 +67,21 @@ body {
   left: -60%;
 }
 
-.honey {
+.honey-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); // centers it on both axes
+  z-index: 1; // keeps it above background if needed
+}
+
+.honey {
+  width: 100px;
+  transform-origin: top center; // essential for clean swing
+  &:hover {
+    filter: drop-shadow(0 0 10px #ffe600);
+    filter: brightness(1.5); /* gold glow */
+  }
 }
 //#endregion IconStyling
 
